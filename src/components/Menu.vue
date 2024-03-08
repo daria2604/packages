@@ -82,7 +82,7 @@ const linksRight = [
     font-size: $fz-header-menu;
     text-transform: uppercase;
 
-    @media #{$screen-tablet-small} {
+    @media #{$screen-mobile} {
       font-size: $font-size-base;
     }
   }
