@@ -1,0 +1,59 @@
+// Colors
+$white: #FFF;
+$black: #000;
+$purple-heart: #8C35E3;
+$sushi: #81B42E;
+$supernova: #FFCA00;
+$sunshade: #FF8F28;
+$wild-watermelon: #FF4E68;
+
+$color-background: $purple-heart;
+$color-text: $white;
+$color-startx: $sushi;
+$color-lite: $supernova;
+$color-plus: $sunshade;
+$color-pro: $wild-watermelon;
+$color-ultra: $purple-heart;
+
+// Fonts
+$font-size-base: 18px;
+
+$font-size-small: 16px;
+$font-size-normal: 24px;
+$font-size-medium: 32px;
+$font-size-big: 52px;
+$font-size-huge: 64px;
+
+$fz-header-menu: $font-size-normal;
+$fz-text: $font-size-normal;
+$fz-heading-small: $font-size-normal;
+$fz-heading-card: $font-size-big;
+$fz-price-card: 35px;
+$fz-heading: $font-size-huge;
+$fz-placeholder: $font-size-small;
+$fz-button-send: $font-size-small;
+$fz-contact: $font-size-small;
+$fz-link: $font-size-small;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$font-family-custom: "Poppins";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+
+$font-family: $font-family-custom, $font-family-default;
+$font-path: '@/src/assets/fonts';
+
+// Layout
+$container-width-desktop: 1440px;
+$gap-container: 20px;
+
+// Borders
+$border: 2px solid $black;
+$border-radius: 20px;
+
+// Gradients 
+$green-to-yellow: linear-gradient(0deg, $sushi 0%, $supernova 100%);
+$yellow-to-orage: linear-gradient(0deg, $supernova 0%, $sunshade 100%);
+$orange-to-red: linear-gradient(0deg, $sunshade 0%, $wild-watermelon 100%);
+$red-to-purple: linear-gradient(0deg, $wild-watermelon 0%, $purple-heart 100%);
