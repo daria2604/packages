@@ -1,0 +1,24 @@
+@mixin hover {
+  opacity: .8;
+  transition: all .2s linear;
+}
+
+@mixin label-top {
+  position: absolute;
+
+  display: block;
+  width: 207px;
+  height: 105px;
+
+  border-radius: 50px 50px 0 0;
+}
+
+@mixin label-bottom {
+  position: absolute;
+
+  display: block;
+  width: 207px;
+  height: 105px;
+
+  border-radius: 0 0 50px 50px;
+}
