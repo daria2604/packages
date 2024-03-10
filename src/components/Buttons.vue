@@ -8,9 +8,7 @@
           :text="button.text"
           :hasBadge="button.hasBadge"
           :number="button.number"
-        >
-          <slot></slot>
-        </Button>
+        />
       </li>
     </ul>
   </div>

@@ -4,9 +4,7 @@
       <div class="header__col">
         <div class="header__row header__row--buttons">
           <div class="header__buttons">
-            <Buttons>
-              <CartIcon class="button__icon--cart" :fontControlled="false" />
-            </Buttons>
+            <Buttons />
           </div>
         </div>
 
@@ -26,7 +24,6 @@
 <script setup>
 import Buttons from './Buttons.vue';
 import Menu from './Menu.vue';
-import CartIcon from '../assets/images/icons/cart.svg';
 </script>
 
 <style lang="scss" scoped>
@@ -48,6 +45,7 @@ import CartIcon from '../assets/images/icons/cart.svg';
     &--menu {
       justify-content: space-between;
       margin-right: 270px;
+      margin-left: 60px;
 
       @media #{$screen-tablet-normal} {
         row-gap: 30px;
@@ -66,17 +64,21 @@ import CartIcon from '../assets/images/icons/cart.svg';
   }
 
   &::before {
-    @include label-top;
-
+    position: absolute;
     bottom: -4px;
     left: 50%;
     z-index: 2;
 
-    background-color: $white;
+    display: block;
+    width: 207px;
+    height: 105px;
+
+    border-radius: 61px 61px 0 0;
     border-top: $border;
     border-left: $border;
     border-right: $border;
 
+    background-color: $white;
     content: '';
   }
 }

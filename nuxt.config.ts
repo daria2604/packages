@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['nuxt-svgo'],
   css: ['normalize.css/normalize.css'],
   svgo: {
-    autoImportPath: './src/assets/images/icons/',
+    defaultImport: 'component',
   },
   vite: {
     css: {

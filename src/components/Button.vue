@@ -3,7 +3,7 @@
     <span v-if="design === 'simple'" class="button__text">{{ text }}</span>
 
     <span v-if="design === 'iconed'" class="button__icon">
-      <slot></slot>
+      <CartIcon class="button__icon--cart" :fontControlled="false" />
     </span>
 
     <span v-if="hasBadge" class="button__badge">{{ number }}</span>
@@ -11,10 +11,11 @@
 </template>
 
 <script setup>
+import CartIcon from '../assets/images/icons/cart.svg';
+
 defineProps({
   design: {
     type: String,
-    default: 'simple',
   },
   position: {
     type: String,
@@ -25,11 +26,9 @@ defineProps({
   },
   hasBadge: {
     type: Boolean,
-    default: false,
   },
   number: {
     type: Number,
-    required: true,
   },
 });
 </script>
@@ -40,6 +39,8 @@ defineProps({
   margin: 0;
 
   border: none;
+
+  cursor: pointer;
 
   &:hover & {
     &__icon {
@@ -90,6 +91,8 @@ defineProps({
       width: 36px;
       height: 36px;
       margin: 0;
+
+      color: $black;
     }
   }
 
