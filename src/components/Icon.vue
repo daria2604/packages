@@ -17,6 +17,11 @@
       :class="`icon-arrow icon-${color} ${isReversed && 'icon-reversed'}`"
       :fontControlled="false"
     />
+
+    <ArrowRightIcon
+      v-if="iconType === 'arrow-right'"
+      :class="`icon-arrow-right`"
+    />
   </span>
 </template>
 
@@ -24,6 +29,7 @@
 import CartIcon from '../assets/images/icons/cart.svg';
 import PlusIcon from '../assets/images/icons/plus.svg';
 import ArrowIcon from '../assets/images/icons/arrow.svg';
+import ArrowRightIcon from '../assets/images/icons/arrow-right.svg';
 
 defineProps({
   iconType: {
@@ -72,6 +78,18 @@ defineProps({
     &-arrow {
       width: 60px;
       height: 26px;
+    }
+  }
+
+  &--subscription & {
+    &-cart {
+      width: 35px;
+      height: 35px;
+    }
+
+    &-plus {
+      width: 27px;
+      height: 27px;
     }
   }
 

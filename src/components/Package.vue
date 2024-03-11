@@ -338,15 +338,7 @@ const simpleFolds = [
   }
 
   &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 16px;
-
-    padding-left: 24px;
-    padding-right: 18px;
-
-    border-radius: 0 12px 12px 0;
+    @include price-button;
 
     background-color: $white;
   }

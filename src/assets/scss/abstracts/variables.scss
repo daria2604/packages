@@ -36,6 +36,8 @@ $fz-button-send: $font-size-small;
 $fz-contact: $font-size-small;
 $fz-link: $font-size-small;
 $fz-heading-package: 128px;
+$fz-subscription-name: 40px;
+$fz-subscription-price: $font-size-huge;
 
 $font-weight-regular: 400;
 $font-weight-bold: 700;
@@ -60,7 +62,7 @@ $border: 4px solid $black;
 $border-radius: 20px;
 
 // Gradients 
-$green-to-yellow: linear-gradient(0deg, $sushi 0%, $supernova 100%);
-$yellow-to-orage: linear-gradient(0deg, $supernova 0%, $sunshade 100%);
-$orange-to-red: linear-gradient(0deg, $sunshade 0%, $wild-watermelon 100%);
-$red-to-purple: linear-gradient(0deg, $wild-watermelon 0%, $purple-heart 100%);
+$green-to-yellow: linear-gradient(90deg, $sushi 0%, $supernova 100%);
+$yellow-to-orange: linear-gradient(90deg, $supernova 0%, $sunshade 100%);
+$orange-to-red: linear-gradient(90deg, $sunshade 0%, $wild-watermelon 100%);
+$red-to-purple: linear-gradient(90deg, $wild-watermelon 0%, $purple-heart 100%);
