@@ -44,6 +44,7 @@ import Menu from './Menu.vue';
 
     &--menu {
       justify-content: space-between;
+      column-gap: 50px;
       margin-right: 270px;
       margin-left: 60px;
 
@@ -58,6 +59,7 @@ import Menu from './Menu.vue';
         row-gap: 30px;
 
         margin-right: 0;
+        margin-left: 0;
         margin-top: 30px;
       }
     }
@@ -80,6 +82,14 @@ import Menu from './Menu.vue';
 
     background-color: $white;
     content: '';
+
+    @media #{$screen-tablet-normal} {
+      width: 150px;
+      height: 80px;
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
   }
 }
 </style>

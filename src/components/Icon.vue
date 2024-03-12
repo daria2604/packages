@@ -78,6 +78,10 @@ defineProps({
     &-arrow {
       width: 60px;
       height: 26px;
+
+      @media #{$screen-tablet-normal} {
+        width: 30px;
+      }
     }
   }
 

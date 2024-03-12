@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <div class="upgrade__subscription">
+    <!-- <div class="upgrade__subscription">
       <Subscriptions :items="subscriptions"/>
     </div>
 
@@ -16,7 +16,7 @@
         <p class="upgrade__heading">{{ upgrades.package.heading }}</p>
         <p class="upgrade__text">{{ upgrades.package.text }}</p>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 

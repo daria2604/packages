@@ -207,6 +207,10 @@ const simpleFolds = [
       left: 50%;
 
       background-color: $color-startx;
+
+      @media #{$screen-tablet-small} {
+        left: 55%;
+      }
     }
   }
 
@@ -219,6 +223,10 @@ const simpleFolds = [
       left: 40%;
 
       background-color: $color-lite;
+
+      @media #{$screen-tablet-small} {
+        left: 45%;
+      }
     }
   }
 
@@ -231,6 +239,10 @@ const simpleFolds = [
       left: 30%;
 
       background-color: $color-plus;
+
+      @media #{$screen-tablet-small} {
+        left: 35%;
+      }
     }
   }
 
@@ -243,6 +255,10 @@ const simpleFolds = [
       left: 20%;
 
       background-color: $color-pro;
+
+      @media #{$screen-tablet-small} {
+        left: 25%;
+      }
     }
   }
 
@@ -255,6 +271,10 @@ const simpleFolds = [
       left: 10%;
 
       background-color: $color-ultra;
+
+      @media #{$screen-tablet-small} {
+        left: 15%;
+      }
     }
   }
 
@@ -272,6 +292,10 @@ const simpleFolds = [
   &__header & {
     &__heading {
       font-size: $fz-heading;
+
+      @media #{$screen-tablet-normal} {
+        font-size: 42px;
+      }
 
       &--title {
         letter-spacing: 4px;
@@ -297,6 +321,15 @@ const simpleFolds = [
     padding-top: 5px;
 
     border-radius: 0 0 61px 61px;
+
+    @media #{$screen-tablet-normal} {
+      bottom: -50px;
+
+      width: 100px;
+      height: 50px;
+
+      border-radius: 0 0 34px 34px;
+    }
   }
 
   &__about {
@@ -306,22 +339,39 @@ const simpleFolds = [
 
   &__info {
     max-width: 454px;
+
+    @media #{$screen-tablet-normal} {
+      text-align: center;
+    }
   }
 
   &__heading {
     @include bold-text;
     font-size: $fz-heading-package;
     letter-spacing: -1px;
+
+    @media #{$screen-tablet-small} {
+      font-size: 72px;
+    }
   }
 
   &__text {
     font-size: $fz-text;
     letter-spacing: -1px;
+
+    @media #{$screen-tablet-small} {
+      font-size: $font-size-base;
+    }
   }
 
   &__price {
     display: flex;
     margin-top: 103px;
+
+    @media #{$screen-tablet-small} {
+      justify-content: center;
+      margin-top: 56px;
+    }
 
     &-number {
       font-size: $font-size-huge;
@@ -334,6 +384,17 @@ const simpleFolds = [
 
       background-color: $white;
       color: $black;
+
+      @media #{$screen-tablet-small} {
+        font-size: $font-size-big;
+      }
+
+      @media #{$screen-mobile} {
+        font-size: 42px;
+
+        padding-left: 25px;
+        padding-right: 45px;
+      }
     }
   }
 
@@ -349,6 +410,11 @@ const simpleFolds = [
     display: flex;
     justify-content: space-between;
     column-gap: 150px;
+
+    @media #{$screen-tablet-normal} {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__features {
@@ -357,6 +423,19 @@ const simpleFolds = [
     column-gap: 87px;
     padding-top: 180px;
     padding-bottom: 100px;
+
+    @media #{$screen-tablet-normal} {
+      padding-top: 0;
+    }
+
+    @media #{$screen-tablet-small} {
+      column-gap: 30px;
+    }
+
+    @media #{$screen-mobile} {
+      flex-direction: column;
+      row-gap: 50px;
+    }
   }
 }
 </style>

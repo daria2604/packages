@@ -72,6 +72,10 @@ const items = [
     padding-bottom: 68px;
 
     color: $black;
+
+    @media #{$screen-tablet-normal} {
+      font-size: 42px;
+    }
   }
 }
 </style>

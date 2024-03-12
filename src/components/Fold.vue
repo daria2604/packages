@@ -83,28 +83,48 @@ defineProps({
   &--big {
     min-height: 115px;
     padding: 27px 42px 27px 59px;
+
+    @media #{$screen-tablet-small} {
+      padding: 20px 36px;
+    }
   }
 
   &--big & {
     &__text {
       font-size: 26px;
       line-height: 22px;
+
+      @media #{$screen-tablet-small} {
+        font-size: $font-size-base;
+      }
     }
 
     &__content {
       row-gap: 31.5px;
+
+      @media #{$screen-tablet-small} {
+        row-gap: 15px;
+      }
     }
   }
 
   &--medium {
     height: 110px;
     padding: 21px 14px 21px 44px;
+
+    @media #{$screen-tablet-small} {
+      padding: 16px 25px 16px 36px;
+    }
   }
 
   &--medium & {
     &__text {
       font-size: 26px;
       line-height: 32px;
+
+      @media #{$screen-tablet-small} {
+        font-size: $font-size-base;
+      }
     }
   }
 
